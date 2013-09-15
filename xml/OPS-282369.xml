@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<Request type="Order" ID="282369" Date="9-13-2013 12:14:18 PM"> 
+  <Order Version="1.0" CartNumber="282369" Date="9-13-2013 12:14:18 PM">
+    <DeploymentMode>Production</DeploymentMode>
+    <SiteURL>https://sinalitedashboard.com/</SiteURL>
+    
+
+    <BillTo CostCenter="" CustomerPO="">
+      <Payment Method="credit card">
+        <Charges Currency="USD">
+          <Freight cost="12.62">12.62</Freight>
+          <Tax>51.04</Tax>
+          <Total>443.66</Total>
+        </Charges>
+      </Payment>
+      <PostalAddress> 
+	    <CompanyName></CompanyName>
+        <Name>Online print SVC</Name> 
+        <Attn>Katari - Phil daCosta</Attn> 
+        <Address>282-b Elgin Street</Address> 
+        <Address></Address>
+        <Address></Address> 
+        <City>Ottawa</City> 
+        <StateProv>ON</StateProv> 
+        <PostalCode>K2P 1M3</PostalCode> 
+        <Country>Canada</Country> 
+	    <ContactPhone></ContactPhone>
+      </PostalAddress> 
+	  <BillingAddress> 
+        <Address>282-b Elgin Street</Address> 
+        <Address></Address>
+        <Address></Address> 
+        <City>Ottawa</City> 
+        <StateProv>ON</StateProv> 
+        <PostalCode>K2P 1M3</PostalCode> 
+        <Country>Canada</Country> 
+      </BillingAddress> 
+    </BillTo>
+	<OrderedBy>
+		<FirstName>Phil</FirstName>
+		<LastName>daCosta</LastName>
+		<Phone>613.233.1999</Phone>
+		<Email>info@katariimaging.com</Email>
+		<ExtEmpID></ExtEmpID>
+		<AddEmpInfo></AddEmpInfo>
+		<CostCentreName>onlineprintsvc_cc</CostCentreName>
+		<Username>katari</Username>
+        
+<Extrinsic Type="Company Name">Katari Imaging</Extrinsic>
+	</OrderedBy>
+  </Order>
+
+    
+<Items>
+      <Item LineNumber="PM528575" Rush="No"  type="New" approved="NA">
+		<Supplier></Supplier>
+        <SupplierPartID></SupplierPartID>
+        <ManufacturerPartID>popsl000</ManufacturerPartID>
+        <TemplateName></TemplateName>
+        <Quantity>1</Quantity>
+        <UnitSize>1</UnitSize>   
+        <Image></Image>
+		<ImpositionImage></ImpositionImage> 
+		<FileUpload></FileUpload>
+		<FileUploadName></FileUploadName>
+		
+
+		<NexJobFileUpload filenumber="1">Files/UploadFiles/KatariWrkShftprintE13.pdf</NexJobFileUpload>
+		<NexJobFileUploadConverted filenumber="1"></NexJobFileUploadConverted>
+		
+
+		<TypeSettingInfo></TypeSettingInfo>
+		<TemplateOtherInformation></TemplateOtherInformation>
+		<ApproverComments></ApproverComments>
+		<UserComments></UserComments>
+		<Project>
+			
+
+				
+
+		</Project>
+        
+
+        <Extrinsic Type="NameOnStationery"></Extrinsic>
+        
+<Extrinsic Type="Finish">matte</Extrinsic>
+
+<Extrinsic Type="Product ID">pop33x81</Extrinsic>
+
+<Extrinsic Type="Product Type">1sided</Extrinsic>
+
+<Extrinsic Type="Qty">1</Extrinsic>
+
+<Extrinsic Type="Size">33x81</Extrinsic>
+
+<Extrinsic Type="Turnaround">1 - 3 Business Days</Extrinsic>
+
+        <ShipTo> 
+          <Carrier>UPS - Ground</Carrier>
+          <Method></Method>
+		  <Weight>{Weight}</Weight>
+          <PostalAddress> 
+			<CompanyName></CompanyName>
+            <Name>Online print SVC</Name> 
+            <Attn>Katari - Phil daCosta</Attn> 
+            <Address>282-b Elgin Street</Address>
+            <Address></Address>
+            <Address></Address> 
+            <City>Ottawa</City> 
+            <StateProv>ON</StateProv> 
+            <PostalCode>K2P 1M3</PostalCode>
+            <Country>Canada</Country>
+			<ContactPhone></ContactPhone>
+          </PostalAddress> 
+        </ShipTo> 
+        <Charges Currency="USD">
+          <Item>95.00</Item>
+          <Tax>12.35</Tax>
+		  
+
+          <Total>107.35</Total>
+        </Charges>
+      </Item> 
+    
+
+
+      <Item LineNumber="PM528576" Rush="No"  type="New" approved="NA">
+		<Supplier></Supplier>
+        <SupplierPartID></SupplierPartID>
+        <ManufacturerPartID>popsl000</ManufacturerPartID>
+        <TemplateName></TemplateName>
+        <Quantity>1</Quantity>
+        <UnitSize>1</UnitSize>   
+        <Image></Image>
+		<ImpositionImage></ImpositionImage> 
+		<FileUpload></FileUpload>
+		<FileUploadName></FileUploadName>
+		
+
+		<NexJobFileUpload filenumber="2">Files/UploadFiles/KatariWrkShftprintF22.pdf</NexJobFileUpload>
+		<NexJobFileUploadConverted filenumber="2"></NexJobFileUploadConverted>
+		
+
+		<TypeSettingInfo></TypeSettingInfo>
+		<TemplateOtherInformation></TemplateOtherInformation>
+		<ApproverComments></ApproverComments>
+		<UserComments></UserComments>
+		<Project>
+			
+
+				
+
+		</Project>
+        
+
+        <Extrinsic Type="NameOnStationery"></Extrinsic>
+        
+<Extrinsic Type="Finish">matte</Extrinsic>
+
+<Extrinsic Type="Product ID">pop33x81</Extrinsic>
+
+<Extrinsic Type="Product Type">1sided</Extrinsic>
+
+<Extrinsic Type="Qty">1</Extrinsic>
+
+<Extrinsic Type="Size">33x81</Extrinsic>
+
+<Extrinsic Type="Turnaround">1 - 3 Business Days</Extrinsic>
+
+        <ShipTo> 
+          <Carrier>UPS - Ground</Carrier>
+          <Method></Method>
+		  <Weight>{Weight}</Weight>
+          <PostalAddress> 
+			<CompanyName></CompanyName>
+            <Name>Online print SVC</Name> 
+            <Attn>Katari - Phil daCosta</Attn> 
+            <Address>282-b Elgin Street</Address>
+            <Address></Address>
+            <Address></Address> 
+            <City>Ottawa</City> 
+            <StateProv>ON</StateProv> 
+            <PostalCode>K2P 1M3</PostalCode>
+            <Country>Canada</Country>
+			<ContactPhone></ContactPhone>
+          </PostalAddress> 
+        </ShipTo> 
+        <Charges Currency="USD">
+          <Item>95.00</Item>
+          <Tax>12.35</Tax>
+		  
+
+          <Total>107.35</Total>
+        </Charges>
+      </Item> 
+    
+
+
+      <Item LineNumber="PM528580" Rush="No"  type="New" approved="NA">
+		<Supplier></Supplier>
+        <SupplierPartID></SupplierPartID>
+        <ManufacturerPartID>popsl000</ManufacturerPartID>
+        <TemplateName></TemplateName>
+        <Quantity>1</Quantity>
+        <UnitSize>1</UnitSize>   
+        <Image></Image>
+		<ImpositionImage></ImpositionImage> 
+		<FileUpload></FileUpload>
+		<FileUploadName></FileUploadName>
+		
+
+		<NexJobFileUpload filenumber="3">Files/UploadFiles/KatariWrkShftPrintRtE32.pdf</NexJobFileUpload>
+		<NexJobFileUploadConverted filenumber="3"></NexJobFileUploadConverted>
+		
+
+		<TypeSettingInfo></TypeSettingInfo>
+		<TemplateOtherInformation></TemplateOtherInformation>
+		<ApproverComments></ApproverComments>
+		<UserComments></UserComments>
+		<Project>
+			
+
+				
+
+		</Project>
+        
+
+        <Extrinsic Type="NameOnStationery"></Extrinsic>
+        
+<Extrinsic Type="Finish">matte</Extrinsic>
+
+<Extrinsic Type="Product ID">pop33x81</Extrinsic>
+
+<Extrinsic Type="Product Type">1sided</Extrinsic>
+
+<Extrinsic Type="Qty">1</Extrinsic>
+
+<Extrinsic Type="Size">33x81</Extrinsic>
+
+<Extrinsic Type="Turnaround">1 - 3 Business Days</Extrinsic>
+
+        <ShipTo> 
+          <Carrier>UPS - Ground</Carrier>
+          <Method></Method>
+		  <Weight>{Weight}</Weight>
+          <PostalAddress> 
+			<CompanyName></CompanyName>
+            <Name>Online print SVC</Name> 
+            <Attn>Katari - Phil daCosta</Attn> 
+            <Address>282-b Elgin Street</Address>
+            <Address></Address>
+            <Address></Address> 
+            <City>Ottawa</City> 
+            <StateProv>ON</StateProv> 
+            <PostalCode>K2P 1M3</PostalCode>
+            <Country>Canada</Country>
+			<ContactPhone></ContactPhone>
+          </PostalAddress> 
+        </ShipTo> 
+        <Charges Currency="USD">
+          <Item>95.00</Item>
+          <Tax>12.35</Tax>
+		  
+
+          <Total>107.35</Total>
+        </Charges>
+      </Item> 
+    
+
+
+      <Item LineNumber="PM528582" Rush="No"  type="New" approved="NA">
+		<Supplier></Supplier>
+        <SupplierPartID></SupplierPartID>
+        <ManufacturerPartID>popsl000</ManufacturerPartID>
+        <TemplateName></TemplateName>
+        <Quantity>1</Quantity>
+        <UnitSize>1</UnitSize>   
+        <Image></Image>
+		<ImpositionImage></ImpositionImage> 
+		<FileUpload></FileUpload>
+		<FileUploadName></FileUploadName>
+		
+
+		<NexJobFileUpload filenumber="4">Files/UploadFiles/KatariWrkShftPrintRtE42.pdf</NexJobFileUpload>
+		<NexJobFileUploadConverted filenumber="4"></NexJobFileUploadConverted>
+		
+
+		<TypeSettingInfo></TypeSettingInfo>
+		<TemplateOtherInformation></TemplateOtherInformation>
+		<ApproverComments></ApproverComments>
+		<UserComments></UserComments>
+		<Project>
+			
+
+				
+
+		</Project>
+        
+
+        <Extrinsic Type="NameOnStationery"></Extrinsic>
+        
+<Extrinsic Type="Finish">matte</Extrinsic>
+
+<Extrinsic Type="Product ID">pop33x81</Extrinsic>
+
+<Extrinsic Type="Product Type">1sided</Extrinsic>
+
+<Extrinsic Type="Qty">1</Extrinsic>
+
+<Extrinsic Type="Size">33x81</Extrinsic>
+
+<Extrinsic Type="Turnaround">1 - 3 Business Days</Extrinsic>
+
+        <ShipTo> 
+          <Carrier>UPS - Ground</Carrier>
+          <Method></Method>
+		  <Weight>{Weight}</Weight>
+          <PostalAddress> 
+			<CompanyName></CompanyName>
+            <Name>Online print SVC</Name> 
+            <Attn>Katari - Phil daCosta</Attn> 
+            <Address>282-b Elgin Street</Address>
+            <Address></Address>
+            <Address></Address> 
+            <City>Ottawa</City> 
+            <StateProv>ON</StateProv> 
+            <PostalCode>K2P 1M3</PostalCode>
+            <Country>Canada</Country>
+			<ContactPhone></ContactPhone>
+          </PostalAddress> 
+        </ShipTo> 
+        <Charges Currency="USD">
+          <Item>95.00</Item>
+          <Tax>12.35</Tax>
+		  
+
+          <Total>107.35</Total>
+        </Charges>
+      </Item> 
+    
+
+</Items>
+</Request>
