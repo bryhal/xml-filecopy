@@ -1,7 +1,5 @@
-# now lets do a watched folder...
-
-
-
+# read xml for file names, copy them, move xmls to 'done'
+# while loop
 
 import os
 from xml.dom.minidom import parseString
@@ -39,62 +37,34 @@ def get_pdf_file_list(xml_file):
 
 
 def main():  
-    
-    while True:  
-        # get the list of xml files
-        xml_files = get_xml_file_list(xml_dir)
-        #print xml_files
-        if len(xml_files) > 0:
-            # get the list of pdf files from the xml files
-            pdf_files = []
-            for xml_file in xml_files:
-                full_xml_path = xml_dir+xml_file
-                pdf_files.append(get_pdf_file_list(full_xml_path))
-            
-            # this will be a list of lists of pdf basenames 
-            #print pdf_files
-            
-            pdfs_to_copy = list(itertools.chain.from_iterable(pdf_files))
-            
-            #flattened list of PDF files
-            #print pdfs_to_copy
-            
-            #copy pdf files from src to dest
-            for pdf in pdfs_to_copy:
-                shutil.copy(file_dir+pdf, file_dest+pdf)
-                if os.path.isfile (file_dest+pdf): print "%s %s" %  ('Copied', pdf)
-            
-            # move xmls to destination
-            for xml_file in xml_files:
-                shutil.move(xml_dir+xml_file, xml_dest+xml_file)
+     
+    # get the list of xml files
+    xml_files = get_xml_file_list(xml_dir)
+    #print xml_files
+    if len(xml_files) > 0:
+        # get the list of pdf files from the xml files
+        pdf_files = []
+        for xml_file in xml_files:
+            full_xml_path = xml_dir+xml_file
+            pdf_files.append(get_pdf_file_list(full_xml_path))
+        
+        # this will be a list of lists of pdf basenames 
+        #print pdf_files
+        
+        pdfs_to_copy = list(itertools.chain.from_iterable(pdf_files))        
+        #flattened list of PDF files
+        #print pdfs_to_copy
+        
+        #copy pdf files from src to dest
+        for pdf in pdfs_to_copy:
+            shutil.copy(file_dir+pdf, file_dest+pdf)
+            if os.path.isfile (file_dest+pdf): print "%s %s" %  ('Copied', pdf)
+        
+        # move xmls to destination
+        for xml_file in xml_files:
+            shutil.move(xml_dir+xml_file, xml_dest+xml_file)
 
-    sleep(20)
-
-if __name__ == '__main__':
-    main()
-
-
-'''    
-    
-#print xmlfiles
-pdffiles = []
-for f in xmlfiles:
-    #files = get_file_list(f)
-    pdffiles.append(get_file_list(f))
-
-# this will be a list of lists
-print pdffiles
-print len(pdffiles)
-
-
-# I need a flat list
-import itertools
-
-new_list = list(itertools.chain.from_iterable(pdffiles))
-print new_list
-print len(new_list)
-
-'''
-
-
-
+while True:
+    if __name__ == '__main__':
+        main()
+sleep(20)
