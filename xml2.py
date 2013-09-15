@@ -35,32 +35,37 @@ def get_pdf_file_list(xml_file):
     return pdf_file_list
 
 
-# get the list of xml files
-xml_files = get_xml_file_list(xml_dir)
-print xml_files
+def main():    
+    # get the list of xml files
+    xml_files = get_xml_file_list(xml_dir)
+    #print xml_files
+    
+    # get the list of pdf files from the xml files
+    pdf_files = []
+    for xml_file in xml_files:
+        full_xml_path = xml_dir+xml_file
+        pdf_files.append(get_pdf_file_list(full_xml_path))
+    
+    # this will be a list of lists of pdf basenames 
+    #print pdf_files
+    
+    pdfs_to_copy = list(itertools.chain.from_iterable(pdf_files))
+    
+    #flattened list of PDF files
+    #print pdfs_to_copy
+    
+    #copy pdf files from src to dest
+    for pdf in pdfs_to_copy:
+        shutil.copy(file_dir+pdf, file_dest+pdf)
+    
+    # move xmls to destination
+    for xml_file in xml_files:
+        shutil.move(xml_dir+xml_file, xml_dest+xml_file)
 
-# get the list of pdf files from the xml files
-pdf_files = []
-for xml_file in xml_files:
-    full_xml_path = xml_dir+xml_file
-    pdf_files.append(get_pdf_file_list(full_xml_path))
 
-# this will be a list of lists of pdf basenames 
-print pdf_files
 
-pdfs_to_copy = list(itertools.chain.from_iterable(pdf_files))
-
-#flattened list of PDF files
-print pdfs_to_copy
-
-#copy pdf files from src to dest
-for pdf in pdfs_to_copy:
-    shutil.copy(file_dir+pdf, file_dest+pdf)
-
-# move xmls to destination
-for xml_file in xml_files:
-    shutil.move(xml_dir+xml_file, xml_dest+xml_file)
-
+if __name__ == '__main__':
+    main()
 
 
 '''    
