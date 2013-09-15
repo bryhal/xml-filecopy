@@ -4,12 +4,12 @@ import win32event
 
 class PySvc(win32serviceutil.ServiceFramework):
     # you can NET START/STOP the service by the following name
-    _svc_name_ = "PySvc"
+    _svc_name_ = "xml_file_copy"
     # this text shows up as the service name in the Service
     # Control Manager (SCM)
-    _svc_display_name_ = "Python Test Service"
+    _svc_display_name_ = "OLP - OPS File copier"
     # this text shows up as the description in the SCM
-    _svc_description_ = "This service writes stuff to a file"
+    _svc_description_ = "Copies PDF files from OPS to OLP servers"
     
     def __init__(self, args):
         win32serviceutil.ServiceFramework.__init__(self,args)
