@@ -57,11 +57,12 @@ print pdfs_to_copy
 for pdf in pdfs_to_copy:
     shutil.copy(file_dir+pdf, file_dest+pdf)
 
+# move xmls to destination
+for xml_file in xml_files:
+    shutil.move(xml_dir+xml_file, xml_dest+xml_file)
 
-# get the pdf files referenced in the xmls
 
 
-    
 '''    
     
 #print xmlfiles
