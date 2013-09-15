@@ -57,6 +57,7 @@ def main():
     #copy pdf files from src to dest
     for pdf in pdfs_to_copy:
         shutil.copy(file_dir+pdf, file_dest+pdf)
+        if os.path.isfile (file_dest+pdf): print "Success"
     
     # move xmls to destination
     for xml_file in xml_files:
